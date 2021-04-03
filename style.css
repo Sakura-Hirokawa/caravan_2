@@ -9,6 +9,15 @@ a {
   text-decoration: none;
 }
 
+header,
+nav,
+/* blog,sidebarのheadingを指定したいためh2のみ指定 */
+h2,
+.main-visual,
+footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
@@ -16,10 +25,25 @@ header {
   background-color: red;
   /* 文字のみだからdisplay:flexなし */
   text-align: center;
+  /* #socialの基準位置を相対位置へ変更する */
+  position: relative;
 }
 
 header.heading {
   font-size: 32px;
+}
+
+.social {
+  /* .headerの左上を基準に絶対位置で指定する,socialが親要素ではない */
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.social i {
+  /* social iにinline-blockを指定 */
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .nav-list {
