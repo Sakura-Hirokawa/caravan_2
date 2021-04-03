@@ -91,6 +91,11 @@ main {
   line-height: 0.6;
 }
 
+.blog-box {
+  /* blog-boxの内側余白を作る */
+  padding-top: 50px;
+}
+
 .blog-item {
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -101,6 +106,15 @@ main {
 
 .blog-image {
   height: 180px;
+}
+
+.blog-text {
+  /* blog-textの内側余白 */
+  padding: 25px 0 0 30px;
+}
+
+.blog-text-heading {
+  padding-bottom: 15px;
 }
 
 .blog-date {
