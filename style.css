@@ -67,24 +67,32 @@ header.heading {
 main {
   /* margin:0 auto;使うためwidthを設定 */
   /* heightと縦並びになるからheight削除 */
-  width: 840px;
+  width: 800px;
   /* 子要素の横並び、Flexboxの利用 */
   display: flex;
   /* 子要素の中央寄せ */
   justify-content: center;
   /* main中央寄せ（左右に余白がないとできない） */
   margin: 0 auto;
+  padding: 70px 0;
 }
 
 .blog {
-  width: 600px;
-  height: 1400px;
+  width: 540px;
+  /* sidebarとの間隔 */
+  margin-right: 30px;
   background-color: limegreen;
 }
 
+.blog-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  /* ラインの上の文字重なる */
+  line-height: 0.6;
+}
+
 .sidebar {
-  width: 240px;
-  height: 1400px;
+  width: 230px;
   background-color: palegreen;
 }
 
