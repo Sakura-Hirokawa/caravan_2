@@ -22,7 +22,6 @@ header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
-  background-color: red;
   /* 文字のみだからdisplay:flexなし */
   text-align: center;
   /* #socialの基準位置を相対位置へ変更する */
@@ -51,14 +50,12 @@ header.heading {
   text-align: center;
   padding: 10px 0;
   margin: 0 auto;
-  background-color: lightpink;
 }
 
 .nav-list-item {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
-  background-color: palevioletred;
 }
 
 .main-visual {
@@ -105,7 +102,6 @@ main {
   width: 540px;
   /* sidebarとの間隔 */
   margin-right: 30px;
-  background-color: limegreen;
 }
 
 .blog-heading {
@@ -173,7 +169,6 @@ main {
 
 .sidebar {
   width: 230px;
-  background-color: palegreen;
 }
 
 .common-heading {
@@ -261,8 +256,17 @@ footer {
     width: 100%;
   }
 
+  .nav-list {
+    width: 100%;
+  }
+
   .nav-list-item {
-    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .social {
+    display: none;
   }
 
   .main-visual-content {
@@ -276,22 +280,39 @@ footer {
 
   .blog {
     width: 100%;
+    margin: 0;
+  }
+
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .blog-image {
-    width: 180px;
-    padding-left: 10px;
+    width: 49%;
+  }
+
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
   }
 
   .sidebar {
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
-  .popular-heading {
-    padding-top: 50px;
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
   }
 
-  .instagram-box{
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
 
+  .pagination {
+    margin-bottom: 50px;
   }
 }
