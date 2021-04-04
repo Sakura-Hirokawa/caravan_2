@@ -255,3 +255,43 @@ footer {
 .footer-text {
   color: white;
 }
+
+@media screen and (max-width: 425px) {
+  header {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    display: block;
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .blog {
+    width: 100%;
+  }
+
+  .blog-image {
+    width: 180px;
+    padding-left: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .popular-heading {
+    padding-top: 50px;
+  }
+
+  .instagram-box{
+
+  }
+}
